@@ -85,7 +85,9 @@ p{
   margin-bottom: 0.4rem;
 }
 
-
+.h4{
+  font-size: 15px;
+}
 /* SLick slider */
 .slick-dotted.slick-slider{
   margin-bottom: 8px;
@@ -166,7 +168,6 @@ p{
   --bs-btn-disabled-border-color: var(--bs-primary);
 }
 
-
 .form-control{
   background-color: #EBF2F5;
   border: none;
@@ -187,3 +188,4 @@ p{
 .fs-12{
   font-size: 12px;
 }
+

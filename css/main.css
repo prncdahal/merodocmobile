@@ -22,6 +22,9 @@ h5 {
 h5 {
 	font-size: 13px;
 }
+h6{
+	font-size: 12px;
+}
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	color: #343a40;
 }
@@ -31,6 +34,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .main-wrapper {
 	margin: auto;
 	position: relative;
+	max-width: 375px;
 }
 .head-nav {
 	background-color: #fff;
@@ -80,6 +84,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .main-content {
 	position: relative;
 	min-height: 100%;
+	padding-bottom: 50px;
 }
 /* Doctor Appointment List */
 
@@ -334,3 +339,36 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .z-index10{
 	z-index: 10;
 }
+
+/* Map range */
+   .map-range{
+	display: none;
+   }
+	.map-range input{
+		-webkit-appearance: none;
+		width: 100%;
+		height: 2px;
+		background: #2f333a;
+		outline: none;
+		opacity: 0.7;
+		-webkit-transition: .2s;
+		transition: opacity .2s;
+	}
+	.map-range input::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 20px;
+		height: 20px;
+		background: var(--bs-primary);
+		cursor: pointer;
+		border-radius: 50%;
+	}
+	.map-range input::-moz-range-thumb {
+		width: 25px;
+		height: 25px;
+		background: var(--bs-primary);
+		cursor: pointer;
+	}
+	input#showMap:checked + label > .map-range{
+		display: block !important;
+	}

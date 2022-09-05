@@ -46,7 +46,7 @@
             <div class="text-primary search-wrapper-head-icons">
               
               <i data-bs-toggle="offcanvas" data-bs-target="#sortCanvasRight" aria-controls="sortCanvasRight" class="bi bi-arrow-down-up me-2"></i>
-               <i class="bi bi-sliders"></i>
+               <i data-bs-toggle="offcanvas" data-bs-target="#filters" aria-controls="filters" class="bi bi-sliders"></i>
             </div>
         </div>
         <div class="search-input-box ">
@@ -58,7 +58,6 @@
       </div>
     </div>
       <section class="doctor-appointment-section pt-0">
-         
          <div class="doctor-appointment-list d-flex flex-column gap-3 flex-wrap">
            <div class="doctor-appointment-list_item rounded px-0 mb-2">
             <em class="bi bi-heart fav-ico shadow-sm"></em>
@@ -155,8 +154,6 @@
               <a class="btn-link fw-semi" href="doc-appointment.html">Book Appointment <em class="bi bi-arrow-right"></em></a>
              </div>
            </div> <!--doctor-appointment-list_item-->
-           
-           
          </div>
        </section> <!---doctor-appointment-list-->
    </div>
@@ -202,6 +199,88 @@
 
 </div>
  <!-- End of sort right nav -->
+
+ <!-- Filters -->
+ <div class="offcanvas offcanvas-end bg-secondary" tabindex="-1" id="filters" aria-labelledby="filtersLabel">
+  <div class="offcanvas-header text-light">
+    <span type="button" class="text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><em class="bi bi-chevron-left fs-5"></em></span>
+    <h3 class="text-light mb-0" id="filtersLabel">Filters</h3>
+    <div></div>
+    
+  </div>
+  <div class="offcanvas-body">
+    <div class="mb-4">
+      <h4 class="text-light mb-2 pb-1">Location</h4>
+      <div class="d-flex gap-3 offcanvas_btn-list">
+        <button class="btn btn-outline-light py-1">My Address</button>
+        <button class="btn btn-outline-light ">Current Location</button>
+        <button class="btn btn-outline-light ">Select Location</button>
+      </div>
+    </div>
+
+    <div class="pt-2 mb-4 ">
+      <div class="d-flex align-items-center mb-3">
+        <input class="form-check-input h4 my-0 me-2" type="checkbox" value="" id="showMap">
+        <label class="form-check-label h4 my-0 text-light showMapLabel" for="showMap">
+          Show on Map
+        </label>
+        
+       
+      </div>
+      <div class="map-range pt-2">
+        <h6 class="text-light">Distance(0 Km)</h6>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+    
+      
+     
+    </div>
+    
+    <div class="mb-4">
+      <h4 class="text-light mb-3 pb-1">Departments</h4>
+      <div class="symtoms-list d-flex gap-3 overflow-auto no-bar pb-2">
+        <div class="symtoms-list-item text-center" style="max-width: 111px;">
+         <div class="symtoms-list-item_media rounded shadow-sm ">
+          <img src="./images/icons/osteoarthritis.svg" alt="">
+         </div>
+         <h5 class="text-truncate mb-1 text-light" style="max-width: 111px;">Genral Practice and Emergency Medicine</h5>
+        </div> <!--symtoms-list-item-->
+        <div class="symtoms-list-item text-center" style="max-width: 111px;">
+         <div class="symtoms-list-item_media rounded shadow-sm ">
+          <img src="./images/icons/osteoarthritis.svg" alt="">
+         </div>
+         <h5 class="text-truncate mb-1 text-light" style="max-width: 111px;">Genral Practice and Emergency Medicine</h5>
+        </div> <!--symtoms-list-item-->
+        <div class="symtoms-list-item text-center" style="max-width: 111px;">
+         <div class="symtoms-list-item_media rounded shadow-sm ">
+          <img src="./images/icons/osteoarthritis.svg" alt="">
+         </div>
+         <h5 class="text-truncate mb-1 text-light" style="max-width: 111px;">Genral Practice and Emergency Medicine</h5>
+        </div> <!--symtoms-list-item-->
+        <div class="symtoms-list-item text-center" style="max-width: 111px;">
+         <div class="symtoms-list-item_media rounded shadow-sm ">
+          <img src="./images/icons/osteoarthritis.svg" alt="">
+         </div>
+         <h5 class="text-truncate mb-1 text-light" style="max-width: 111px;">Genral Practice and Emergency Medicine</h5>
+        </div> <!--symtoms-list-item-->
+        <div class="symtoms-list-item text-center" style="max-width: 111px;">
+         <div class="symtoms-list-item_media rounded shadow-sm ">
+          <img src="./images/icons/osteoarthritis.svg" alt="">
+         </div>
+         <h5 class="text-truncate mb-1 text-light" style="max-width: 111px;">Genral Practice and Emergency Medicine</h5>
+        </div> <!--symtoms-list-item-->
+       </div>
+      
+    </div>
+    
+  </div>
+  <div class="offcanvas-footer d-flex gap-3 p-3">
+    <button type="button" class="btn btn-outline-light fs-12"><em class="bi bi-x-lg me-1"></em>Clear Filters</button>
+    <button type="button" class="btn btn-primary fs-12">Apply</button>
+  </div>
+
+</div>
+ <!-- End of Filters -->
 
  <!-- Scripts -->
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

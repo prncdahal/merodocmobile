@@ -8,6 +8,15 @@ $(document).ready(function(){
         dots:true
     });
 
+    // Toggle on check
+    $("#showMap").change(function() {
+        if(this.checked) {
+           $('.map-range').addClass('d-block');
+        } else{
+            $('.map-range').removeClass('d-block');
+        }
+    });
+
 });
 // Floating button Effects
 var lastScrollTop = 0;
@@ -23,3 +32,4 @@ $(window).scroll(function(event){
    }
    lastScrollTop = st;
 });
+
