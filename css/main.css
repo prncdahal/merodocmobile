@@ -29,7 +29,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	height: 60px;
 }
 .main-wrapper {
-	max-width: 375px;
+	/* max-width: 375px; */
 	margin: auto;
 	position: relative;
 	/* height: 100%; */
@@ -168,20 +168,20 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 .floating-btn {
 	position: fixed;
-	bottom: 75px;
-	right: 41%;
-	border: none;
-	background-color: var(--bs-primary);
-	color: #fff;
-	padding: 12px 14px;
-	border-radius: 50%;
-	transition: padding 400ms linear;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	gap: 6px;
-	letter-spacing: 1px;
-	border-radius: 30px;
+    bottom: 65px;
+    right: 1rem;
+    border: none;
+    background-color: var(--bs-primary);
+    color: #fff;
+    padding: 12px 14px;
+    border-radius: 50%;
+    transition: padding 400ms linear;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 1px;
+    border-radius: 30px;
 }
 .floating-btn span {
 	color: #fff;
