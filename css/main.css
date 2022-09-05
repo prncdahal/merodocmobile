@@ -139,7 +139,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	margin-bottom: 0;
 	display: flex;
 	padding: 8px 0;
-	justify-content: center;
+	justify-content: space-evenly;
 	gap: 24px;
 }
 .main-nav li {
