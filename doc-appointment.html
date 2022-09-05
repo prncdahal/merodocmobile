@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./vendor/bootstrap-5.2.0/css/bootstrap.css">
+ <link rel="stylesheet" href="./vendor/bootstrap-icon/bootstrap-icons.css">
+ <link rel="stylesheet" href="./vendor/slick/slick/slick.css">
+ <link rel="stylesheet" href="./vendor/slick/slick/slick-theme.css">
+ <link rel="stylesheet" href="./css/override.css">
+ <link rel="stylesheet" href="./css/main.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+ <title>Mero Doctor</title>
+</head>
+<body>
+ <div class="main-wrapper shadow ">
+  <header class="header bg-primary">
+  <div class="top-bar bg-secondary">
+    <a href="./index.html"><em class="bi bi-chevron-left fs-5 text-light"></em></a>
+    <h3 class="text-light mb-0">Doctor Appointment</h3>
+    <div></div>
+  </div> <!--Top Bar-->
+<!--  
+   <div class="main-nav shadow">
+    <div class="container-fluid">
+     <ul>
+      <li class="active"><a href="#"><em class="bi bi-house"></em></a></li>
+      <li><a href="#"><em class="bi bi-chat-dots"></em></a></li>
+      <li><a href="#"><em class="bi bi-bell"></em></a></li>
+      <li><a href="#"><em class="bi bi-gear"></em></a></li>
+      <li><a href="#"><em class="bi bi-person"></em></a></li>
+     </ul>
+    </div>
+   </div> -->
+
+ </header>
+ <main class="main-content bg-secondary text-light">
+  <section class="doc-appointment-details pt-3">
+    <div class="container">
+        <div class="d-flex align-items-center pb-4">
+            <div class="flex-grow-1 me-1">
+                <h2 class="text-light ">Prof. Dr. Chanda Karki</h2>
+                <h5 class="text-light mb-3">Gynocology/Obstetrics</h5>
+                <a href="#"><img src="./images/icons/location.png" alt=""></a>
+              </div>
+            <div class="flex-shrink-0 doc-img-wrapper">
+              <img width="100" src="./images/subi-kharel.png" alt="...">
+              <em class="bi bi-heart"></em>
+            </div>
+          </div>
+          <div class="py-3 border-top border-bottom">
+            <h6 class="text-uppercase text-light pb-1">Experience</h6>
+            <p class="mb-0">36 years</p>
+          </div>
+          <div class="py-3 border-bottom ">
+            <h6 class="text-uppercase text-light pb-1">Qualification</h6>
+            <p class="mb-0">MSC</p>
+          </div>
+          <div class="appointment-calendar">
+            <div class="appointment-calander-head">
+                <button class="btn btn-success"><em class="bi bi-arrow-left"></em></button>
+                <span class="btn btn-outline-light"><small>August 2022</small></span>
+                <button class="btn btn-success"><em class="bi bi-arrow-right"></em></button>
+            </div>
+            <div class="appointment-calendar-body  overflow-hidden">
+                <div class="appointment-calendar-item">
+                    <h6>Wed</h6>
+                    <p>24</p>
+                </div> <!---appointment-calendar-item-->
+                <div class="appointment-calendar-item active">
+                    <h6>Thu</h6>
+                    <p>24</p>
+                </div> <!---appointment-calendar-item-->
+                <div class="appointment-calendar-item">
+                    <h6>Fri</h6>
+                    <p>24</p>
+                </div> <!---appointment-calendar-item-->
+                <div class="appointment-calendar-item">
+                    <h6>Sat</h6>
+                    <p>24</p>
+                </div> <!---appointment-calendar-item-->
+                <div class="appointment-calendar-item">
+                    <h6>Sun</h6>
+                    <p>24</p>
+                </div> <!---appointment-calendar-item-->
+                <div class="appointment-calendar-item">
+                    <h6>Mon</h6>
+                    <p>24</p>
+                </div> <!---appointment-calendar-item-->
+                <div class="appointment-calendar-item">
+                    <h6>Tue</h6>
+                    <p>24</p>
+                </div> <!---appointment-calendar-item-->
+            </div>
+            <div class="appointment-date-option">
+              <span class="active">BS</span>
+              <span>AD</span>
+            </div>
+            <div class="appointment-time-selection">
+              <div class="d-flex mb-3 justify-content-between align-items-center">
+                <p class="mb-0">Select Time</p>
+                <a href="#" class="text-light small text-uppercase">View All</a>
+              </div>
+              <div class="d-flex flex-wrap gap-3">
+                  <button class="btn btn-outline-light small mb-2">19:30</button>
+                  <button class="btn btn-outline-light small mb-2">19:48</button>
+                  <button class="btn btn-outline-light small mb-2">20:06</button>
+                  <button class="btn btn-outline-light small mb-2">20:24</button>
+              </div>
+            </div>
+
+
+          </div>
+    </div>
+  </section>
+  <div class="px-2">
+    <button class="btn btn-success btn-lg book-appointment-btn">Book Appointment</button>
+  </div>
+ </main>
+
+ </div>
+
+ <!-- Scripts -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="./vendor/slick/slick/slick.min.js"></script>
+ <script src="js/main.js"></script>
+</body>
+</html>

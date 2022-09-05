@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./vendor/bootstrap-5.2.0/css/bootstrap.css">
+ <link rel="stylesheet" href="./vendor/bootstrap-icon/bootstrap-icons.css">
+ <link rel="stylesheet" href="./vendor/slick/slick/slick.css">
+ <link rel="stylesheet" href="./vendor/slick/slick/slick-theme.css">
+ <link rel="stylesheet" href="./css/override.css">
+ <link rel="stylesheet" href="./css/main.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+ <title>Mero Doctor</title>
+</head>
+<body>
+ <div class="main-wrapper shadow ">
+  <header class="header bg-primary">
+  <div class="top-bar ">
+    <a href="./index.html"><em class="bi bi-chevron-left fs-5 text-light"></em></a>
+    <h3 class="text-light mb-0">Select a Doctor</h3>
+    <div></div>
+  </div> <!--Top Bar-->
+<!--  
+   <div class="main-nav shadow">
+    <div class="container-fluid">
+     <ul>
+      <li class="active"><a href="#"><em class="bi bi-house"></em></a></li>
+      <li><a href="#"><em class="bi bi-chat-dots"></em></a></li>
+      <li><a href="#"><em class="bi bi-bell"></em></a></li>
+      <li><a href="#"><em class="bi bi-gear"></em></a></li>
+      <li><a href="#"><em class="bi bi-person"></em></a></li>
+     </ul>
+    </div>
+   </div> -->
+
+ </header>
+ <main class="main-content ">
+   <div class="container">
+    <div class="position-sticky top-0 z-index10">
+      <div class="search-wrapper shadow mb-3">
+        <div class="d-flex search-wrapper-head justify-content-between mb-2 align-items-center">
+            <label for="">Search</label>
+            <div class="text-primary search-wrapper-head-icons">
+              
+              <i data-bs-toggle="offcanvas" data-bs-target="#sortCanvasRight" aria-controls="sortCanvasRight" class="bi bi-arrow-down-up me-2"></i>
+               <i class="bi bi-sliders"></i>
+            </div>
+        </div>
+        <div class="search-input-box ">
+            <div class="search-input-box_ico">
+                <img src="./images/icons/search-icon.svg" alt="">
+            </div>
+            <input type="text" class="form-control " placeholder="Search Doctor"/>
+        </div>
+      </div>
+    </div>
+      <section class="doctor-appointment-section pt-0">
+         
+         <div class="doctor-appointment-list d-flex flex-column gap-3 flex-wrap">
+           <div class="doctor-appointment-list_item rounded px-0 mb-2">
+            <em class="bi bi-heart fav-ico shadow-sm"></em>
+             <div class="d-flex mb-1 px-3">
+              <div class="mb-2 me-3">
+                <a href="doc-appointment.html"><img class="rounded-circle" src="./images/stephen.png" alt=""></a>
+              </div>
+              <div>
+                <h4 class="mb-1 fw-semi">Dr Stephen</h4>
+              <p class="text-muted mb-1 ">Pediatrics</p>
+              <p>Experience: 36 yrs</p>
+              
+              </div>
+             </div>
+             <p class="px-3 text-muted"><em class="bi bi-clock me-1"></em> Next Available time: <span class="text-dark">Aug 28 at 7:30 PM</span></p>
+             <div class="doctor-appointment-list_item_footer px-3 d-flex justify-content-between">
+              <span class="bg-primary text-light rounded-pill px-2 fw-bold">Rs 700.00</span>
+              <a class="btn-link fw-semi" href="doc-appointment.html">Book Appointment <em class="bi bi-arrow-right"></em></a>
+             </div>
+           </div> <!--doctor-appointment-list_item-->
+           <div class="doctor-appointment-list_item rounded px-0 mb-2">
+            <em class="bi bi-heart fav-ico shadow-sm"></em>
+             <div class="d-flex mb-1 px-3">
+              <div class="mb-2 me-3">
+                <a href="doc-appointment.html"><img class="rounded-circle" src="./images/stephen.png" alt=""></a>
+              </div>
+              <div>
+                <h4 class="mb-1 fw-semi">Dr Stephen</h4>
+              <p class="text-muted mb-1 ">Pediatrics</p>
+              <p>Experience: 36 yrs</p>
+              
+              </div>
+             </div>
+             <p class="px-3 text-muted"><em class="bi bi-clock me-1"></em> Next Available time: <span class="text-dark">Aug 28 at 7:30 PM</span></p>
+             <div class="doctor-appointment-list_item_footer px-3 d-flex justify-content-between">
+              <span class="bg-primary text-light rounded-pill px-2 fw-bold">Rs 700.00</span>
+              <a class="btn-link fw-semi" href="doc-appointment.html">Book Appointment <em class="bi bi-arrow-right"></em></a>
+             </div>
+           </div> <!--doctor-appointment-list_item-->
+           <div class="doctor-appointment-list_item rounded px-0 mb-2">
+            <em class="bi bi-heart fav-ico shadow-sm"></em>
+             <div class="d-flex mb-1 px-3">
+              <div class="mb-2 me-3">
+                <a href="doc-appointment.html"><img class="rounded-circle" src="./images/stephen.png" alt=""></a>
+              </div>
+              <div>
+                <h4 class="mb-1 fw-semi">Dr Stephen</h4>
+              <p class="text-muted mb-1 ">Pediatrics</p>
+              <p>Experience: 36 yrs</p>
+              
+              </div>
+             </div>
+             <p class="px-3 text-muted"><em class="bi bi-clock me-1"></em> Next Available time: <span class="text-dark">Aug 28 at 7:30 PM</span></p>
+             <div class="doctor-appointment-list_item_footer px-3 d-flex justify-content-between">
+              <span class="bg-primary text-light rounded-pill px-2 fw-bold">Rs 700.00</span>
+              <a class="btn-link fw-semi" href="doc-appointment.html">Book Appointment <em class="bi bi-arrow-right"></em></a>
+             </div>
+           </div> <!--doctor-appointment-list_item-->
+           <div class="doctor-appointment-list_item rounded px-0 mb-2">
+            <em class="bi bi-heart fav-ico shadow-sm"></em>
+             <div class="d-flex mb-1 px-3">
+              <div class="mb-2 me-3">
+                <a href="doc-appointment.html"><img class="rounded-circle" src="./images/stephen.png" alt=""></a>
+              </div>
+              <div>
+                <h4 class="mb-1 fw-semi">Dr Stephen</h4>
+              <p class="text-muted mb-1 ">Pediatrics</p>
+              <p>Experience: 36 yrs</p>
+              
+              </div>
+             </div>
+             <p class="px-3 text-muted"><em class="bi bi-clock me-1"></em> Next Available time: <span class="text-dark">Aug 28 at 7:30 PM</span></p>
+             <div class="doctor-appointment-list_item_footer px-3 d-flex justify-content-between">
+              <span class="bg-primary text-light rounded-pill px-2 fw-bold">Rs 700.00</span>
+              <a class="btn-link fw-semi" href="doc-appointment.html">Book Appointment <em class="bi bi-arrow-right"></em></a>
+             </div>
+           </div> <!--doctor-appointment-list_item-->
+           <div class="doctor-appointment-list_item rounded px-0 mb-2">
+            <em class="bi bi-heart fav-ico shadow-sm"></em>
+             <div class="d-flex mb-1 px-3">
+              <div class="mb-2 me-3">
+                <a href="doc-appointment.html"><img class="rounded-circle" src="./images/stephen.png" alt=""></a>
+              </div>
+              <div>
+                <h4 class="mb-1 fw-semi">Dr Stephen</h4>
+              <p class="text-muted mb-1 ">Pediatrics</p>
+              <p>Experience: 36 yrs</p>
+              
+              </div>
+             </div>
+             <p class="px-3 text-muted"><em class="bi bi-clock me-1"></em> Next Available time: <span class="text-dark">Aug 28 at 7:30 PM</span></p>
+             <div class="doctor-appointment-list_item_footer px-3 d-flex justify-content-between">
+              <span class="bg-primary text-light rounded-pill px-2 fw-bold">Rs 700.00</span>
+              <a class="btn-link fw-semi" href="doc-appointment.html">Book Appointment <em class="bi bi-arrow-right"></em></a>
+             </div>
+           </div> <!--doctor-appointment-list_item-->
+           
+           
+         </div>
+       </section> <!---doctor-appointment-list-->
+   </div>
+ </main>
+
+ </div>
+
+ <!-- Sort -->
+ <div class="offcanvas offcanvas-end bg-secondary" tabindex="-1" id="sortCanvasRight" aria-labelledby="sortCanvasRightLabel">
+  <div class="offcanvas-header text-light">
+    <span type="button" class="text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><em class="bi bi-chevron-left fs-5"></em></span>
+    <h3 class="text-light mb-0" id="sortCanvasRightLabel">Sort</h3>
+    <div></div>
+    
+  </div>
+  <div class="offcanvas-body">
+    <div class="mb-4">
+      <h4 class="text-light mb-2 pb-1">Fee</h4>
+      <div class="d-flex gap-3 offcanvas_btn-list">
+        <button class="btn btn-outline-light ">High to Low</button>
+        <button class="btn btn-outline-light ">Low to High</button>
+      </div>
+    </div>
+    <div class="mb-4">
+      <h4 class="text-light mb-2 pb-1">Experience</h4>
+      <div class="d-flex gap-3 offcanvas_btn-list">
+        <button class="btn btn-outline-light ">High to Low</button>
+        <button class="btn btn-outline-light ">Low to High</button>
+      </div>
+    </div>
+    <div class="mb-4">
+      <h4 class="text-light mb-2 pb-1">Appointment Time</h4>
+      <div class="d-flex gap-3 offcanvas_btn-list">
+        <button class="btn btn-outline-light ">Nearest Appointment Time</button>
+      </div>
+    </div>
+    
+  </div>
+  <div class="offcanvas-footer d-flex gap-3 p-3">
+    <button type="button" class="btn btn-outline-light fs-12"><em class="bi bi-x-lg me-1"></em>Clear Filters</button>
+    <button type="button" class="btn btn-primary fs-12">Apply</button>
+  </div>
+
+</div>
+ <!-- End of sort right nav -->
+
+ <!-- Scripts -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./vendor/bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+
+ <script src="./vendor/slick/slick/slick.min.js"></script>
+ <script src="js/main.js"></script>
+</body>
+</html>
