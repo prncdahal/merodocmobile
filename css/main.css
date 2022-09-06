@@ -81,7 +81,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .main-content {
 	position: relative;
 	min-height: 100%;
-	padding-bottom: 50px;
+	padding-bottom: 1rem;
 }
 /* Doctor Appointment List */
 
@@ -202,8 +202,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	justify-content: space-between;
 	padding: 0 1rem;
 }
+.doc-appointment .main-wrapper{
+	height: 100%;
+}
 .doc-appointment-details {
-	padding-bottom: 60px;
+	padding-bottom: 50px;
 }
 .doc-appointment-details h2 {
 	font-size: 20px;
@@ -246,7 +249,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .appointment-calendar-item {
 	text-align: center;
 	max-width: 60px;
-	padding: 16px 10px;
+	padding: 12px 10px;
 	border-radius: 8px;
 }
 .appointment-calendar-item.active {
@@ -372,8 +375,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 	/* Patient list */
     .patient-list{
-		min-height: 300px;
-		max-height: 400px;
+		min-height: 250px;
+		max-height: 250px;
 		overflow: auto;
 	}
 	.patient-list-item label{
