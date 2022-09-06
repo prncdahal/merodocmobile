@@ -209,7 +209,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	justify-content: space-between;
 	padding: 0 1rem;
 }
-.doc-appointment .main-wrapper{
+.doc-appointment .main-wrapper,.choose-patient-page .main-wrapper{
 	height: 100%;
 }
 .doc-appointment-details {
