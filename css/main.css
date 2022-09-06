@@ -462,8 +462,8 @@ input#showMap:checked+label>.map-range {
 
 /* Patient list */
 .patient-list {
-	min-height: 300px;
-	max-height: 300px;
+	min-height: 290px;
+	max-height: 290px;
 	overflow: auto;
 }
 
