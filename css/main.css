@@ -84,7 +84,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 .main-content {
 	position: relative;
-	min-height: 100%;
+	/* min-height: 100%; */
 	padding-bottom: 1rem;
 }
 .home .main-content{
@@ -382,8 +382,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 	/* Patient list */
     .patient-list{
-		min-height: 250px;
-		max-height: 250px;
+		min-height: 280px;
+		max-height: 280px;
 		overflow: auto;
 	}
 	.patient-list-item label{
