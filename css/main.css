@@ -2,28 +2,31 @@ html, body {
 	height: 100%;
 }
 body {
-	line-height: 1.4;
-	font-size: 12px;
+	line-height: 1.2;
+	font-size: 11px;
 	color: #8F9596;
 	padding-bottom: 60px;
 }
+h1{
+  font-size: 32px;
+}
 h2 {
-	font-size: 18px;
+	font-size: 28px;
 }
 h3 {
-	font-size: 16px;
+	font-size: 24px;
 }
 h4 {
-	font-size: 15px;
+	font-size: 17px;
 }
 h5 {
 	font-size: 14px;
 }
 h6{
-	font-size: 12px;
+	font-size: 13px;
 }
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-	color: #343a40;
+	color: #112950;
 }
 .top-bar {
 	height: 60px;
@@ -77,11 +80,15 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	max-width: 200px;
 	margin-bottom: 0;
 	color: #fff;
+	font-size: 18px;
 }
 .main-content {
 	position: relative;
 	min-height: 100%;
 	padding-bottom: 1rem;
+}
+.home .main-content{
+	padding-bottom: 40px;
 }
 /* Doctor Appointment List */
 

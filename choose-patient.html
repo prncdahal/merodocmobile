@@ -20,7 +20,7 @@
   <header class="header bg-primary">
   <div class="top-bar ">
     <a href="./index.html"><em class="bi bi-chevron-left fs-5 text-light"></em></a>
-    <h3 class="text-light mb-0">Select a Doctor</h3>
+    <h4 class="text-light mb-0">Select a Doctor</h4>
     <div></div>
   </div> <!--Top Bar-->
 <!--  
@@ -55,7 +55,7 @@
     </div>
     <section>
         <div class="mb-3">
-        <h4 class="fw-semi">Choose Patient</h4>
+        <h5 class="fw-semi">Choose Patient</h5>
         <p>Please select a patient for whom you want to take appointment for:</p>
         </div>
         <div class="patient-list no-bar border-top py-3">
@@ -66,7 +66,7 @@
                         <img class="img-rounded" width="80" height="80" src="https://api.mero.doctor/image/default_male.png" alt="...">
                     </div>
                     <div class="flex-grow-1 ms-3">
-                        <h5 class="fw-semi">Rebu Dahal</h5>
+                        <h6 class="fw-semi">Rebu Dahal</h6>
                         <h6>9843395043</h6>
                         <div class="text-muted mb-2">1996/11/08 [2052/10/25] (26 yr)</div>
                         <div class="text-muted fw-bold text-uppercase">self</div>
@@ -80,7 +80,7 @@
                         <img class="img-rounded" width="80" height="80" src="https://api.mero.doctor/image/default_male.png" alt="...">
                     </div>
                     <div class="flex-grow-1 ms-3">
-                        <h5 class="fw-semi">Rebu Dahal</h5>
+                        <h6 class="fw-semi">Rebu Dahal</h6>
                         <h6>9843395043</h6>
                         <div class="text-muted mb-1">1996/11/08 [2052/10/25] (26 yr)</div>
                         <div class="text-muted fw-bold text-uppercase">self</div>
@@ -120,7 +120,7 @@
    
       
    </div>
-   <div class=" border-top pt-4 px-4">
+   <div class=" border-top pt-4 px-4 sticky-bottom">
     <button class="btn btn-primary w-100 py-2">Continue <em class="bi bi-chevron-right small"></em> </button>
 </div>
  </main>
@@ -128,123 +128,6 @@
 
  </div>
 
- <!-- Sort -->
- <div class="offcanvas offcanvas-end bg-secondary" tabindex="-1" id="sortCanvasRight" aria-labelledby="sortCanvasRightLabel">
-  <div class="offcanvas-header text-light">
-    <span type="button" class="text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><em class="bi bi-chevron-left fs-5"></em></span>
-    <h3 class="text-light mb-0" id="sortCanvasRightLabel">Sort</h3>
-    <div></div>
-    
-  </div>
-  <div class="offcanvas-body">
-    <div class="mb-4">
-      <h4 class="text-light mb-2 pb-1">Fee</h4>
-      <div class="d-flex gap-3 offcanvas_btn-list">
-        <button class="btn btn-outline-light ">High to Low</button>
-        <button class="btn btn-outline-light ">Low to High</button>
-      </div>
-    </div>
-    <div class="mb-4">
-      <h4 class="text-light mb-2 pb-1">Experience</h4>
-      <div class="d-flex gap-3 offcanvas_btn-list">
-        <button class="btn btn-outline-light ">High to Low</button>
-        <button class="btn btn-outline-light ">Low to High</button>
-      </div>
-    </div>
-    <div class="mb-4">
-      <h4 class="text-light mb-2 pb-1">Appointment Time</h4>
-      <div class="d-flex gap-3 offcanvas_btn-list">
-        <button class="btn btn-outline-light ">Nearest Appointment Time</button>
-      </div>
-    </div>
-    
-  </div>
-  <div class="offcanvas-footer d-flex gap-3 p-3">
-    <button type="button" class="btn btn-outline-light fs-12"><em class="bi bi-x-lg me-1"></em>Clear Filters</button>
-    <button type="button" class="btn btn-primary fs-12">Apply</button>
-  </div>
-
-</div>
- <!-- End of sort right nav -->
-
- <!-- Filters -->
- <div class="offcanvas offcanvas-end bg-secondary" tabindex="-1" id="filters" aria-labelledby="filtersLabel">
-  <div class="offcanvas-header text-light">
-    <span type="button" class="text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><em class="bi bi-chevron-left fs-5"></em></span>
-    <h3 class="text-light mb-0" id="filtersLabel">Filters</h3>
-    <div></div>
-  </div>
-  <div class="offcanvas-body">
-    <div class="mb-4">
-      <h4 class="text-light mb-2 pb-1">Location</h4>
-      <div class="d-flex gap-3 offcanvas_btn-list">
-        <button class="btn btn-outline-light py-1 px-3">My Address</button>
-        <button class="btn btn-outline-light py-1 px-3">Current Location</button>
-        <button class="btn btn-outline-light py-1 px-3">Select Location</button>
-      </div>
-    </div>
-
-    <div class="pt-2 mb-4 ">
-      <div class="d-flex align-items-center mb-3">
-        <input class="form-check-input h4 my-0 me-2" type="checkbox" value="" id="showMap">
-        <label class="form-check-label h4 my-0 text-light showMapLabel" for="showMap">
-          Show on Map
-        </label>
-        
-       
-      </div>
-      <div class="map-range pt-2">
-        <h6 class="text-light">Distance(0 Km) </h6>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-      </div>
-      
-    </div>
-    
-    <div class="mb-4">
-      <h4 class="text-light mb-3 pb-1">Departments</h4>
-      <div class="symtoms-list d-flex gap-3 overflow-auto no-bar pb-2">
-        <div class="symtoms-list-item text-center" style="max-width: 111px;">
-         <div class="symtoms-list-item_media rounded shadow-sm ">
-          <img src="./images/icons/osteoarthritis.svg" alt="">
-         </div>
-         <h5 class="text-truncate mb-1 text-light" style="max-width: 111px;">Genral Practice and Emergency Medicine</h5>
-        </div> <!--symtoms-list-item-->
-        <div class="symtoms-list-item text-center" style="max-width: 111px;">
-         <div class="symtoms-list-item_media rounded shadow-sm ">
-          <img src="./images/icons/osteoarthritis.svg" alt="">
-         </div>
-         <h5 class="text-truncate mb-1 text-light" style="max-width: 111px;">Genral Practice and Emergency Medicine</h5>
-        </div> <!--symtoms-list-item-->
-        <div class="symtoms-list-item text-center" style="max-width: 111px;">
-         <div class="symtoms-list-item_media rounded shadow-sm ">
-          <img src="./images/icons/osteoarthritis.svg" alt="">
-         </div>
-         <h5 class="text-truncate mb-1 text-light" style="max-width: 111px;">Genral Practice and Emergency Medicine</h5>
-        </div> <!--symtoms-list-item-->
-        <div class="symtoms-list-item text-center" style="max-width: 111px;">
-         <div class="symtoms-list-item_media rounded shadow-sm ">
-          <img src="./images/icons/osteoarthritis.svg" alt="">
-         </div>
-         <h5 class="text-truncate mb-1 text-light" style="max-width: 111px;">Genral Practice and Emergency Medicine</h5>
-        </div> <!--symtoms-list-item-->
-        <div class="symtoms-list-item text-center" style="max-width: 111px;">
-         <div class="symtoms-list-item_media rounded shadow-sm ">
-          <img src="./images/icons/osteoarthritis.svg" alt="">
-         </div>
-         <h5 class="text-truncate mb-1 text-light" style="max-width: 111px;">Genral Practice and Emergency Medicine</h5>
-        </div> <!--symtoms-list-item-->
-       </div>
-      
-    </div>
-    
-  </div>
-  <div class="offcanvas-footer d-flex gap-3 p-3">
-    <button type="button" class="btn btn-outline-light fs-12"><em class="bi bi-x-lg me-1"></em>Clear Filters</button>
-    <button type="button" class="btn btn-primary fs-12">Apply</button>
-  </div>
-
-</div>
- <!-- End of Filters -->
 
  <!-- Scripts -->
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
