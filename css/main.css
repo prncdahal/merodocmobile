@@ -1,3 +1,6 @@
+
+
+
 html,
 body {
 	height: 100%;
@@ -7,6 +10,9 @@ body {
 	line-height: 1.2;
 	font-size: 11px;
 	color: #8F9596;
+	font-weight: 600;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	/* padding-bottom: 60px; */
 }
 
@@ -47,6 +53,8 @@ h2,
 h1,
 .h1 {
 	color: #112950;
+	font-family: 'Gilroy',sans-serif;
+	font-weight: 600;
 }
 
 .top-bar {
@@ -82,10 +90,12 @@ h1,
 
 .head-nav a {
 	color: var(--bs-dark);
+	font-family: 'SF Pro Display';
 	text-decoration: none;
 	display: block;
 	padding: 14px 2px;
-	font-weight: 400;
+	font-weight: 500;
+	font-size: 12px;
 }
 
 .head-nav a span {
@@ -122,6 +132,9 @@ h1,
 
 .home .main-content {
 	padding-bottom: 40px;
+}
+.doc-appointment .main-content{
+	height: 93.2%;
 }
 
 /* Doctor Appointment List */
