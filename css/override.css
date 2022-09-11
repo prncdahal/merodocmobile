@@ -169,18 +169,27 @@ p{
   --bs-btn-disabled-bg: var(--bs-primary);
   --bs-btn-disabled-border-color: var(--bs-primary);
 }
-
 .form-control{
   background-color: #EBF2F5;
   border: none;
-  font-size: 14px;
+}
+.form-control,.form-select{
+  
+  font-size: 12px;
+  font-weight: 600;
 }
 
 /* FOnt weight */
 .fw-semi{
   font-weight: 600;
 }
-
+label{
+  font-weight: 700;
+  color: var(--bs-secondary);
+}
+input{
+  font-size: 12px;
+}
 /* Offcanvas */
 .offcanvas{
   z-index: 1051;

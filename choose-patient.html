@@ -123,19 +123,135 @@
  </main>
  <div class="py-3 px-4 fixed-bottom position-absolute border-top ">
   <div class="pb-3 text-center ">
-    <a href="#" class="btn-link new-dependant-btn"><em class="bi bi-plus-circle me-1"></em> Add New Dependent</a>
+    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#addDependent" aria-controls="addDependent" class="btn-link new-dependant-btn"><em class="bi bi-plus-circle me-1"></em> Add New Dependent</a>
   </div>
   <button class="btn btn-primary w-100 py-2">Continue <em class="bi bi-chevron-right small"></em> </button>
 </div>
- 
  </div>
+ <div class="offcanvas offcanvas-end " tabindex="-1" id="addDependent" aria-labelledby="addDependentLabel">
+    <div class="offcanvas-header bg-primary text-light">
+        <span type="button" class="text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><em class="bi bi-chevron-left fs-5"></em></span>
+        <h4 class=" mb-0 text-light" id="filtersLabel">Add Family Member</h4>
+        <div></div>
+      </div>
+      <div class="offcanvas-body">
+       <div class="mb-3">
+            <label for="" class="d-block mb-2">First Name <span>*</span></label>
+            <input type="text" class="form-control" placeholder="Enter your first name..">
+       </div>
+       
+       <div class="mb-3">
+            <label for="" class="d-block mb-2">Last Name <span>*</span></label>
+            <input type="text" class="form-control" placeholder="Enter your Last name..">
+       </div>
 
+       <div class="mb-3">
+            <label for="" class="d-block mb-2">Age</label>
+            <div class="d-flex gap-3 mb-3">
+                <input type="text" class="form-control" placeholder="Enter Age">
+                <select name="" class="form-select" id="" style="max-width: 100px;">
+                    <option value="">Years</option>
+                    <option value="">Months</option>
+                    <option value="">Days</option>
+                </select>
+            </div>
+            
+       </div>
+
+    
+    <div class="mb-3">
+        <label for="" class="d-block mb-2">Day of Birth*</label>
+        <input type="date" class="form-control" placeholder="YYYY/MM/DD"/>
+    </div>
+
+    <div class="mb-3">
+        <label for="dob" class="d-flex align-items-center gap-1"><input id="dob" type="checkbox"/>Is real DOB?</label>
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="d-block mb-2">Phone Number</label>
+        <div class="d-flex gap-2">
+            <select name="" id="" class="form-select" style="max-width: 100px;">
+                <option value="">NP +977</option>
+            </select>
+            <input type="text" class="form-control" placeholder="Mobile Number"/>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="d-block mb-2">Email Address (Optional)</label>
+        <input type="text" class="form-control" placeholder="Enter Email Address"/>
+    </div>
+    
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-6">
+                <label for="" class="d-block mb-2">Gender</label>
+                <select name="" id="" class="form-select">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Others</option>
+                </select>
+            </div>
+            
+            <div class="col-6">
+                <label for="" class="d-block mb-2">Relationship</label>
+                <select name="" id="" class="form-select">
+                    <option value="">Other</option>
+                    <option value="">Son</option>
+                    <option value="">Mother</option>
+                </select>
+            </div>
+        
+        </div>
+    </div>
+    
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-6">
+                <label for="" class="d-block mb-2">Select District</label>
+                <select name="" id="" class="form-select">
+                    <option value="">Option1</option>
+                    <option value="">Option2</option>
+                    <option value="">Option3</option>
+                </select>
+            </div>
+            
+            <div class="col-6">
+                <label for="" class="d-block mb-2">Select VDC/Muncipality</label>
+                <select name="" id="" class="form-select">
+                    <option value="">Select</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-6">
+                <label for="" class="d-block mb-2">Ward No.</label>
+                <input type="text" class="form-control" placeholder="Enter Ward No.">
+            </div>
+            
+            <div class="col-6">
+                <label for="" class="d-block mb-2">Tole</label>
+                <input type="text" class="form-control" placeholder="Enter Tole Name">
+            </div>
+        </div>
+    </div>
+
+    
+      </div>
+      <div class="offcanvas-footer p-3">
+        
+        <button type="button" class="btn btn-primary fs-12 d-block w-100">Save</button>
+      </div>
+  </div>
 
  <!-- Scripts -->
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./vendor/bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
-
- <script src="./vendor/slick/slick/slick.min.js"></script>
- <script src="js/main.js"></script>
+<script src="./vendor/slick/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

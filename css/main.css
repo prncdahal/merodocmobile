@@ -249,6 +249,7 @@ h1,
 	gap: 6px;
 	letter-spacing: 1px;
 	border-radius: 30px;
+	font-weight: 600;
 }
 
 .floating-btn span {
@@ -494,5 +495,5 @@ input#showMap:checked+label>.map-range {
 }
 
 .new-dependant-btn{
-	font-size: 15px;
+	font-size: 14px;
 }
